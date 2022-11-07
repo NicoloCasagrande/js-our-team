@@ -44,3 +44,14 @@ for (let i = 0; i < members.length; i++) {
     memberLi.innerHTML = `${members[i].name}, ${members[i].role}, ${members[i].memberImage}`;
     display.append(memberLi);
 }
+
+const cardContainer = document.querySelector('.container');
+
+for (let i = 0; i < members.length; i++) {
+    const memberCard = document.createElement('div');
+    memberCard.classList.add('card');
+    memberCard.innerHTML += `<img src="${members[i].memberImage}" alt="">`;
+    memberCard.innerHTML += `<span>${members[i].name}</span>`;
+    memberCard.innerHTML += `<span>${members[i].role}</span>`;
+    cardContainer.append(memberCard);
+}
