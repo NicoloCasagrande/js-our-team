@@ -1,0 +1,12 @@
+.card{
+    padding: .9375rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 1.875rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}

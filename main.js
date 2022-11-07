@@ -34,6 +34,13 @@ const members = [
 ];
 
 for (let i = 0; i < members.length; i++) {
-    console.log(members[i].name, members[i].role, members[i].memberImage)
-    
+    console.log(members[i].name, members[i].role, members[i].memberImage);
+}
+
+const display = document.getElementById('member-list');
+
+for (let i = 0; i < members.length; i++) {
+    const memberLi = document.createElement('li');
+    memberLi.innerHTML = `${members[i].name}, ${members[i].role}, ${members[i].memberImage}`;
+    display.append(memberLi);
 }
